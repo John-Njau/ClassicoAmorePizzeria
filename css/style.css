@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
   background-color: #343330;
 }
@@ -24,6 +28,15 @@ body {
 
 span {
   color: #d7bc24;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input,
+textarea {
+    border: 1px solid #fff;
 }
 
 @media screen and (min-width: 768px) {
