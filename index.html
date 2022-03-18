@@ -45,8 +45,9 @@
             class="d-block img-fluid"
           />
           <div class="carousel-caption d-block d-md-block">
+            <!-- the logo image should not be visible in small sized screens -->
             <img
-              class="img-fluid logoImg m-3 d-none d-md-block"
+              class="img-fluid logoImg m-3"
               src="Assets/logoImage-removebg.png"
               alt="Logo image"
             />
@@ -158,6 +159,68 @@
 		</div>
 	</section>
 
+  <!-- contact us -->
+  <section
+  class="text-white"
+  style="
+    background-image: url('./Assets/ip4 pizza1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.6;
+  "
+>
+<div class="container contact text-center">
+  <h2 class="p-3 text-warning">CONTACT US</h2>
+  <h4>PLEASE FEEL FREE TO GET IN TOUCH ANYTIME.</h4>
+</div>
+  <form
+    action="https://formspree.io/f/mlezleoe"
+    method="POST"
+    class="form m-4 text-center"
+    name="contactForm"
+  >
+    <label for="name"></label>
+    <input
+      type="text"
+      class="bg-transparent"
+      name="name"
+      placeholder="Name..."
+      required
+    />
+
+    <label for="email"></label>
+    <input
+      type="email"
+      class="bg-transparent m-3 text-white"
+      name="email"
+      id="email"
+      placeholder="Email..."
+      required
+    />
+    <br />
+
+    <label for="message"></label>
+    <div>
+      <textarea
+        rows="8"
+        cols="40"
+        class="bg-transparent text-white container m-4 w-50"
+        id="comment"
+        name="message"
+        placeholder="Write your message here...."
+      ></textarea>
+    </div>
+    <br />
+    <input
+      type="submit"
+      value="Send"
+      id="submitBtn"
+      class="btn btn-warning m-3"
+    />
+  </form>
+</section>
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
