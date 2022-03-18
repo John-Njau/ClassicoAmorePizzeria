@@ -33,6 +33,45 @@
     <title>Pizzeria</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <!-- navbar class, lg-large with a dark bg and light color for text -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+      <div class="container-fluid">
+        <a href="#slideImages" class="navbar-brand"
+          >Classic Amore <br />
+          Pizzeria</a
+        >
+
+        <!-- Adding a hamburger menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--This will show the three side lines on the side in a smaller screen  -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- nav bar navigation class -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#menu" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#menu" class="nav-link">Order</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- Slider display images -->
     <section id="slideImages" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -111,7 +150,7 @@
 
     <!-- About Us -->
     <section class="p-5 text-light">
-      <div class="container about">
+      <div class="container" id="about">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-2 p-5">
             <h3>Our <span>Story</span></h3>
@@ -136,7 +175,7 @@
 
     <!-- menu -->
     <section class="p-5 text-light">
-      <div class="container menu">
+      <div class="container" id="menu">
         <div class="h3 text-center p-3">The <span>Pizzas</span></div>
         <div class="row g-4 align-items-center justify-content-between">
           <div class="col-md-7">
@@ -204,7 +243,7 @@
         opacity: 0.6;
       "
     >
-      <div class="container contact text-center">
+      <div class="container text-center" id="contact">
         <h2 class="p-3 text-warning">CONTACT US</h2>
         <h4>PLEASE FEEL FREE TO GET IN TOUCH ANYTIME.</h4>
       </div>
@@ -265,10 +304,10 @@
 
     <!-- Footer -->
     <footer class="footer p-2 bg-dark text-center text-white position-relative">
-      <div class="container">
-        <p class="lead">Copyright &copy; 2022 John Njau</p>
-
-        <a href="#" class="position-absolute bottom-0 end-0 ">
+      <div class="container-fluid d-flex justify-content-between flex-wrap">
+        <p class="lead">Copyright &copy; 2022</p>
+        <p class="lead me-5">Designed & Developed by John Njau</p>
+        <a href="#" class="position-absolute bottom-0 end-0">
           <i class="bi bi-arrow-up-circle h2 m-2 text-warning"></i>
         </a>
       </div>

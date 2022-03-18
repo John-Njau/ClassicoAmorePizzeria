@@ -6,6 +6,10 @@ body {
   background-color: #343330;
 }
 
+.navbar-brand{
+    color: #d7bc24!important;
+}
+
 .logoImg {
   height: 30%;
   background-color: #343330;
