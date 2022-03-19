@@ -1,20 +1,20 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #343330;
 }
 
-.navbar-brand{
-    color: #d7bc24!important;
+.navbar-brand {
+  color: #d7bc24 !important;
 }
 
 .logoImg {
-  height: 30%;
+  height: 50%;
   background-color: #343330;
   border-radius: 50%;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   /* left: 50%; */
   transition: transform 2s, background-color 3s;
   opacity: 0.7;
@@ -26,6 +26,10 @@ body {
   opacity: 0.7;
 }
 
+.nav-link:hover {
+  color: #d7bc24 !important;
+}
+
 .carousel-caption {
   height: 70%;
 }
@@ -35,17 +39,42 @@ span {
 }
 
 ::placeholder {
-    color: #fff;
+  color: rgb(255, 255, 255, 0.7);
+  /* color: #000000; */
 }
 
 input,
 textarea {
-    border: 1px solid #fff;
+  /* border: 1px solid #fff; */
+  border: 2px solid #d9e2ef;
+
 }
 
 @media screen and (min-width: 768px) {
   .carousel-item {
     height: 80vh;
-    size: 100%;
+    /* size: 100%; */
   }
+
+  form {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* .carousel-item {
+      height: 80vh;
+      size: 100%;
+    } */
+  .logoImg {
+    display: none;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
