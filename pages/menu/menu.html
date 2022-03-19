@@ -33,8 +33,237 @@
     <title>Menu</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <!-- navbar class, lg-large with a dark bg and light color for text -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a href="#slideImages" class="navbar-brand"
+          >Classico Amore <br />
+          Pizzeria</a
+        >
 
+        <!-- Adding a hamburger menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <!--This will show the three side lines on the side in a smaller screen  -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- nav bar navigation class -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About us</a>
+            </li>
+            <!-- <li class="nav-item">
+            <a href="#menu" class="nav-link">Menu</a>
+          </li> -->
+
+            <!-- <li class="nav-item">
+            <a href="#menu" class="nav-link">Order</a>
+          </li> -->
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container mt-4" id="ourMenu">
+      <div class="lead text-center">
+        <h2>Our Menu</h2>
+        <em>The Tastiest Pizzas in Town</em>
+      </div>
+    </section>
+
+    <!-- main menu -->
+    <section class="container" id="items">
+      <h3 class="text-center mt-4" > Main</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">###</th>
+            <th scope="col">Name</th>
+            <th scope="col">Cost</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <img
+                class="img-fluid"
+                src="/Assets/ip4 pizza10.jpg"
+                alt=""
+                width="90px"
+              />
+            </th>
+            <td>
+              Del Cruzo <br />
+              <em>Italian inspired by love </em>
+            </td>
+            <td>1300 <sup>ksh</sup></td>
+            <td><button class="btn btn-warning text-light">Order</button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <img
+                class="img-fluid"
+                src="/Assets/ip4 pizza1.webp"
+                alt=""
+                width="90px"
+              />
+            </th>
+            <td>
+              Del Cruzo <br />
+              <em>Italian inspired by love </em>
+            </td>
+            <td>1300 <sup>ksh</sup></td>
+            <td><button class="btn btn-warning text-light">Order</button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <img
+                class="img-fluid"
+                src="/Assets/ip4 pizza10.jpg"
+                alt=""
+                width="90px"
+              />
+            </th>
+            <td>
+              Del Cruzo <br />
+              <em>Italian inspired by love </em>
+            </td>
+            <td>1300 <sup>ksh</sup></td>
+            <td><button class="btn btn-warning text-light">Order</button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <img
+                class="img-fluid"
+                src="/Assets/ip4 pizza10.jpg"
+                alt=""
+                width="90px"
+              />
+            </th>
+            <td>
+              Del Cruzo <br />
+              <em>Italian inspired by love </em>
+            </td>
+            <td>1300 <sup>ksh</sup></td>
+            <td><button class="btn btn-warning text-light">Order</button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <img
+                class="img-fluid"
+                src="/Assets/ip4 pizza10.jpg"
+                alt=""
+                width="90px"
+              />
+            </th>
+            <td>
+              Del Cruzo <br />
+              <em>Italian inspired by love </em>
+            </td>
+            <td>1300 <sup>ksh</sup></td>
+            <td><button class="btn btn-warning text-light">Order</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Accompaniments -->
+    <section class="container" id="items">
+      <h3 class="text-center mt-4" >Accompaniments</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">###</th>
+            <th scope="col">Name</th>
+            <th scope="col">Cost</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <img
+                class="img-fluid"
+                src="/Assets/ip4 wine2.jpg"
+                alt=""
+                width="90px"
+              />
+            </th>
+            <td>
+              Del Prieso <br />
+              <em> 15 yrs old Italian wine </em>
+            </td>
+            <td>7000 <sup>ksh</sup></td>
+            <td><button class="btn btn-warning text-light">Order</button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <img
+                class="img-fluid"
+                src="/Assets/ip4 wine3.jpg"
+                alt=""
+                width="90px"
+              />
+            </th>
+            <td>
+              Del Cruzo <br />
+              <em>Italian inspired by love </em>
+            </td>
+            <td>1300 <sup>ksh</sup></td>
+            <td><button class="btn btn-warning text-light">Order</button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <img
+                class="img-fluid"
+                src="/Assets/ip4 wine4.jpg"
+                alt=""
+                width="90px"
+              />
+            </th>
+            <td>
+              Del Cruzo <br />
+              <em>Italian inspired by love </em>
+            </td>
+            <td>1300 <sup>ksh</sup></td>
+            <td><button class="btn btn-warning text-light">Order</button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <img
+                class="img-fluid"
+                src="/Assets/ip4 wine5.jpg"
+                alt=""
+                width="90px"
+              />
+            </th>
+            <td>
+              Jacob Creeks Reserve <br />
+              <em>One is never enough </em>
+            </td>
+            <td>1300 <sup>ksh</sup></td>
+            <td><button class="btn btn-warning text-light">Order</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="d-flex justify-content-between">
+      <a href="/index.html"><button class="btn btn-warning text-light" >Back</button>
+      </a>
+      <a href="/pages/checkout/checkout.html">
+        <button class="btn btn-warning text-light" >Checkout</button>
+      </a>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
