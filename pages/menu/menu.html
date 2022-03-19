@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins:700"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/pages/menu/menu.css" />
     <link
       rel="shortcut icon"
       href="/Assets/logoImage-removebg.png"
@@ -37,7 +37,7 @@
     <!-- navbar class, lg-large with a dark bg and light color for text -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container-fluid">
-        <a href="#slideImages" class="navbar-brand"
+        <a href="/index.html" class="navbar-brand"
           >Classico Amore <br />
           Pizzeria</a
         >
@@ -57,17 +57,10 @@
           <!-- nav bar navigation class -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#about" class="nav-link">About us</a>
+              <a href="/index.html" class="nav-link">About us</a>
             </li>
-            <!-- <li class="nav-item">
-            <a href="#menu" class="nav-link">Menu</a>
-          </li> -->
-
-            <!-- <li class="nav-item">
-            <a href="#menu" class="nav-link">Order</a>
-          </li> -->
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="/index.html" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -82,7 +75,7 @@
 
     <!-- main menu -->
     <section class="container" id="items">
-      <h3 class="text-center mt-4" > Main</h3>
+      <h3 class="text-center mt-4">Main</h3>
       <table class="table table-hover">
         <thead>
           <tr>
@@ -103,27 +96,34 @@
               />
             </th>
             <td>
-              Del Cruzo <br />
-              <em>Italian inspired by love </em>
+              Del Cruzo <span>(Large)</span> <br />
+              <em>Italian delicacy inspired by love </em>
               <!-- form for user to select toppings and crust size -->
               <form action="">
+                <label for="size"></label>
+                <select id="size" name="gender">
+                  <option value="select-size">Size</option>
+                  <option value="Small">Small @1000</option>
+                  <option value="medium">Medium @1300</option>
+                  <option value="large">Large @1700</option>
+                </select>
                 <label for="crust-size"></label>
-                  <select id="crust" name="gender">
-                    <option value="select-crustSize">Crust Size</option>
-                    <option value="thick">Thick @300</option>
-                    <option value="thin">Thin @200</option>
-                    <option value="stuffed">Stuffed @400 </option>
-                  </select>
-                  <label for="toppings"></label>
-                  <select id="toppings" name="toppings">
-                    <option value="select-toppings">Toppings</option>
-                    <option value="pepperoni">Pepperoni @300</option>
-                    <option value="chicken">Chicken @250</option>
-                    <option value="cheese">Cheese @100</option>
-                  </select>
+                <select id="crust" name="gender">
+                  <option value="select-crustSize">Crust Size</option>
+                  <option value="thick">Thick @300</option>
+                  <option value="thin">Thin @200</option>
+                  <option value="stuffed">Stuffed @400</option>
+                </select>
+                <label for="toppings"></label>
+                <select id="toppings" name="toppings">
+                  <option value="select-toppings">Toppings</option>
+                  <option value="pepperoni">Pepperoni @300</option>
+                  <option value="chicken">Chicken @250</option>
+                  <option value="cheese">Cheese @100</option>
+                </select>
               </form>
             </td>
-            <td>1300 <sup>ksh</sup></td>
+            <td>1700 <sup>ksh</sup></td>
             <td><button class="btn btn-warning text-light">Order</button></td>
           </tr>
           <tr>
@@ -136,126 +136,154 @@
               />
             </th>
             <td>
-              Del Cruzo <br />
-              <em>Italian inspired by love </em>
+              Soy Seechi <span>(Large)</span> <br />
+              <em>Spanish from homegrown seechi </em>
               <!-- form for user to select toppings and crust size -->
               <form action="">
+                <label for="size"></label>
+                <select id="size" name="gender">
+                  <option value="select-size">Size</option>
+                  <option value="Small">Small @1000</option>
+                  <option value="medium">Medium @1300</option>
+                  <option value="large">Large @1750</option>
+                </select>
                 <label for="crust-size"></label>
-                  <select id="crust" name="gender">
-                    <option value="select-crustSize">Crust Size</option>
-                    <option value="thick">Thick @300</option>
-                    <option value="thin">Thin @200</option>
-                    <option value="stuffed">Stuffed @400 </option>
-                  </select>
-                  <label for="toppings"></label>
-                  <select id="toppings" name="toppings">
-                    <option value="select-toppings">Toppings</option>
-                    <option value="pepperoni">Pepperoni @300</option>
-                    <option value="chicken">Chicken @250</option>
-                    <option value="cheese">Cheese @100</option>
-                  </select>
+                <select id="crust" name="gender">
+                  <option value="select-crustSize">Crust Size</option>
+                  <option value="thick">Thick @300</option>
+                  <option value="thin">Thin @200</option>
+                  <option value="stuffed">Stuffed @400</option>
+                </select>
+                <label for="toppings"></label>
+                <select id="toppings" name="toppings">
+                  <option value="select-toppings">Toppings</option>
+                  <option value="pepperoni">Pepperoni @300</option>
+                  <option value="chicken">Chicken @250</option>
+                  <option value="cheese">Cheese @100</option>
+                </select>
               </form>
             </td>
-            <td>1300 <sup>ksh</sup></td>
+            <td>1750 <sup>ksh</sup></td>
             <td><button class="btn btn-warning text-light">Order</button></td>
           </tr>
           <tr>
             <th scope="row">
               <img
                 class="img-fluid"
-                src="/Assets/ip4 pizza10.jpg"
+                src="/Assets/ip4 pizza6.jpg"
                 alt=""
                 width="90px"
               />
             </th>
             <td>
-              Del Cruzo <br />
-              <em>Italian inspired by love </em>
+              Sigara Go <span>(Large)</span> <br />
+              <em>East Africa's favourite </em>
               <!-- form for user to select toppings and crust size -->
               <form action="">
+                <label for="size"></label>
+                <select id="size" name="gender">
+                  <option value="select-size">Size</option>
+                  <option value="Small">Small @1000</option>
+                  <option value="medium">Medium @1300</option>
+                  <option value="large">Large @1800</option>
+                </select>
                 <label for="crust-size"></label>
-                  <select id="crust" name="gender">
-                    <option value="select-crustSize">Crust Size</option>
-                    <option value="thick">Thick @300</option>
-                    <option value="thin">Thin @200</option>
-                    <option value="stuffed">Stuffed @400 </option>
-                  </select>
-                  <label for="toppings"></label>
-                  <select id="toppings" name="toppings">
-                    <option value="select-toppings">Toppings</option>
-                    <option value="pepperoni">Pepperoni @300</option>
-                    <option value="chicken">Chicken @250</option>
-                    <option value="cheese">Cheese @100</option>
-                  </select>
+                <select id="crust" name="gender">
+                  <option value="select-crustSize">Crust Size</option>
+                  <option value="thick">Thick @300</option>
+                  <option value="thin">Thin @200</option>
+                  <option value="stuffed">Stuffed @400</option>
+                </select>
+                <label for="toppings"></label>
+                <select id="toppings" name="toppings">
+                  <option value="select-toppings">Toppings</option>
+                  <option value="pepperoni">Pepperoni @300</option>
+                  <option value="chicken">Chicken @250</option>
+                  <option value="cheese">Cheese @100</option>
+                </select>
               </form>
             </td>
-            <td>1300 <sup>ksh</sup></td>
+            <td>1800 <sup>ksh</sup></td>
             <td><button class="btn btn-warning text-light">Order</button></td>
           </tr>
           <tr>
             <th scope="row">
               <img
                 class="img-fluid"
-                src="/Assets/ip4 pizza10.jpg"
+                src="/Assets/ip4 pizza4.jpg"
                 alt=""
                 width="90px"
               />
             </th>
             <td>
-              Del Cruzo <br />
-              <em>Italian inspired by love </em>
+              Tol Cruzo <span>(Large)</span> <br />
+              <em>Italian with a homemade taste </em>
               <!-- form for user to select toppings and crust size -->
               <form action="">
+                <label for="size"></label>
+                <select id="size" name="gender">
+                  <option value="select-size">Size</option>
+                  <option value="Small">Small @1000</option>
+                  <option value="medium">Medium @1300</option>
+                  <option value="large">Large @1850</option>
+                </select>
                 <label for="crust-size"></label>
-                  <select id="crust" name="gender">
-                    <option value="select-crustSize">Crust Size</option>
-                    <option value="thick">Thick @300</option>
-                    <option value="thin">Thin @200</option>
-                    <option value="stuffed">Stuffed @400 </option>
-                  </select>
-                  <label for="toppings"></label>
-                  <select id="toppings" name="toppings">
-                    <option value="select-toppings">Toppings</option>
-                    <option value="pepperoni">Pepperoni @300</option>
-                    <option value="chicken">Chicken @250</option>
-                    <option value="cheese">Cheese @100</option>
-                  </select>
+                <select id="crust" name="gender">
+                  <option value="select-crustSize">Crust Size</option>
+                  <option value="thick">Thick @300</option>
+                  <option value="thin">Thin @200</option>
+                  <option value="stuffed">Stuffed @400</option>
+                </select>
+                <label for="toppings"></label>
+                <select id="toppings" name="toppings">
+                  <option value="select-toppings">Toppings</option>
+                  <option value="pepperoni">Pepperoni @300</option>
+                  <option value="chicken">Chicken @250</option>
+                  <option value="cheese">Cheese @100</option>
+                </select>
               </form>
             </td>
-            <td>1300 <sup>ksh</sup></td>
+            <td>1850 <sup>ksh</sup></td>
             <td><button class="btn btn-warning text-light">Order</button></td>
           </tr>
           <tr>
             <th scope="row">
               <img
                 class="img-fluid"
-                src="/Assets/ip4 pizza10.jpg"
+                src="/Assets/ip4 pizza11.jpg"
                 alt=""
                 width="90px"
               />
             </th>
             <td>
-              Del Cruzo <br />
-              <em>Italian inspired by love </em>
+              Toco leno Pizza <span>(Large)</span> <br />
+              <em>A taste of different worlds </em>
               <!-- form for user to select toppings and crust size -->
               <form action="">
+                <label for="size"></label>
+                <select id="size" name="gender">
+                  <option value="select-size">Size</option>
+                  <option value="Small">Small @1000</option>
+                  <option value="medium">Medium @1300</option>
+                  <option value="large">Large @1900</option>
+                </select>
                 <label for="crust-size"></label>
-                  <select id="crust" name="gender">
-                    <option value="select-crustSize">Crust Size</option>
-                    <option value="thick">Thick @300</option>
-                    <option value="thin">Thin @200</option>
-                    <option value="stuffed">Stuffed @400 </option>
-                  </select>
-                  <label for="toppings"></label>
-                  <select id="toppings" name="toppings">
-                    <option value="select-toppings">Toppings</option>
-                    <option value="pepperoni">Pepperoni @300</option>
-                    <option value="chicken">Chicken @250</option>
-                    <option value="cheese">Cheese @100</option>
-                  </select>
+                <select id="crust" name="gender">
+                  <option value="select-crustSize">Crust Size</option>
+                  <option value="thick">Thick @300</option>
+                  <option value="thin">Thin @200</option>
+                  <option value="stuffed">Stuffed @400</option>
+                </select>
+                <label for="toppings"></label>
+                <select id="toppings" name="toppings">
+                  <option value="select-toppings">Toppings</option>
+                  <option value="pepperoni">Pepperoni @300</option>
+                  <option value="chicken">Chicken @250</option>
+                  <option value="cheese">Cheese @100</option>
+                </select>
               </form>
             </td>
-            <td>1300 <sup>ksh</sup></td>
+            <td>1900 <sup>ksh</sup></td>
             <td><button class="btn btn-warning text-light">Order</button></td>
           </tr>
         </tbody>
@@ -264,7 +292,7 @@
 
     <!-- Accompaniments -->
     <section class="container" id="items">
-      <h3 class="text-center mt-4" >Accompaniments</h3>
+      <h3 class="text-center mt-4">Accompaniments</h3>
       <table class="table table-hover">
         <thead>
           <tr>
@@ -287,7 +315,6 @@
             <td>
               Del Prieso <br />
               <em> 15 yrs old Italian wine </em>
-              
             </td>
             <td>7000 <sup>ksh</sup></td>
             <td><button class="btn btn-warning text-light">Order</button></td>
@@ -302,10 +329,10 @@
               />
             </th>
             <td>
-              Del Cruzo <br />
-              <em>Italian inspired by love </em>
+              Irish Srianka <br />
+              <em>From the finest barrel of Irish wine </em>
             </td>
-            <td>1300 <sup>ksh</sup></td>
+            <td>8300 <sup>ksh</sup></td>
             <td><button class="btn btn-warning text-light">Order</button></td>
           </tr>
           <tr>
@@ -318,10 +345,10 @@
               />
             </th>
             <td>
-              Del Cruzo <br />
-              <em>Italian inspired by love </em>
+              Hayle Bum <br />
+              <em>Dry white wine </em>
             </td>
-            <td>1300 <sup>ksh</sup></td>
+            <td>8500 <sup>ksh</sup></td>
             <td><button class="btn btn-warning text-light">Order</button></td>
           </tr>
           <tr>
@@ -337,17 +364,18 @@
               Jacob Creeks Reserve <br />
               <em>One is never enough </em>
             </td>
-            <td>1300 <sup>ksh</sup></td>
+            <td>9000 <sup>ksh</sup></td>
             <td><button class="btn btn-warning text-light">Order</button></td>
           </tr>
         </tbody>
       </table>
     </section>
     <div class="d-flex justify-content-around m-5 pt-5">
-      <a href="/index.html"><button class="btn btn-warning text-light" >Back</button>
+      <a href="/index.html"
+        ><button class="btn btn-warning text-light">Back</button>
       </a>
       <a href="/pages/checkout/checkout.html">
-        <button class="btn btn-warning text-light" >Checkout</button>
+        <button class="btn btn-warning text-light">Checkout</button>
       </a>
     </div>
     <script
