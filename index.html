@@ -1,344 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="Assets/logoImage-removebg.png"
-      type="image/x-icon"
-    />
-    <title>Pizzeria</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <!-- navbar class, lg-large with a dark bg and light color for text -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-      <div class="container-fluid">
-        <a href="#slideImages" class="navbar-brand"
-          >Classic Amore <br />
-          Pizzeria</a
-        >
 
-        <!-- Adding a hamburger menu -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="Assets/logoImage-removebg.png" type="image/x-icon" />
+  <title>Pizzeria</title>
+</head>
 
-        <!--This will show the three side lines on the side in a smaller screen  -->
-        <div class="collapse navbar-collapse" id="navmenu">
-          <!-- nav bar navigation class -->
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#menu" class="nav-link">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#menu" class="nav-link">Order</a>
-            </li>
-          </ul>
+<body>
+  <!-- Navbar -->
+  <!-- navbar class, lg-large with a dark bg and light color for text -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a href="#slideImages" class="navbar-brand">Classico Amore <br />
+        Pizzeria</a>
+
+      <!-- Adding a hamburger menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--This will show the three side lines on the side in a smaller screen  -->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <!-- nav bar navigation class -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Menu</a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Order</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Slider display images -->
+  <section id="slideImages" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#slideImages" data-slide-to="0" class="active"></li>
+      <li data-target="#slideImages" data-slide-to="1"></li>
+      <li data-target="#slideImages" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Assets/ip4 pizza2.jpg" alt="First Slide" class="d-block img-fluid" />
+        <div class="carousel-caption d-block d-md-block">
+          <!-- the logo image should not be visible in small sized screens -->
+          <img class="img-fluid logoImg m-3" src="Assets/logoImage-removebg.png" alt="Logo image" />
+          <br />
+          <h class="fs-1 mb-3 d-block d-md-none">
+            <span class="lead fs-1">Classico Amore Pizzeria</span>
+          </h>
+          <span class="fs-2 text-white">Slice &bull; Dine &bull; Wine</span>
         </div>
       </div>
-    </nav>
-    <!-- Slider display images -->
-    <section id="slideImages" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#slideImages" data-slide-to="0" class="active"></li>
-        <li data-target="#slideImages" data-slide-to="1"></li>
-        <li data-target="#slideImages" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="Assets/ip4 pizza2.jpg"
-            alt="First Slide"
-            class="d-block img-fluid"
-          />
-          <div class="carousel-caption d-block d-md-block">
-            <!-- the logo image should not be visible in small sized screens -->
-            <img
-              class="img-fluid logoImg m-3"
-              src="Assets/logoImage-removebg.png"
-              alt="Logo image"
-            />
-            <br />
-            <h class="fs-1 mb-3 d-block d-md-none">
-              <span class="lead fs-1">Classico Amore Pizzeria</span>
-            </h>
-            <span class="fs-2 text-white">Slice &bull; Dine &bull; Wine</span>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="Assets/ip4 pizza5.jpg"
-            alt="Second Slide"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption d-block d-md-block">
-            <h5>Best <span>Food</span></h5>
-            <p>With 100+ different types of pizza from all over the globe</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="Assets/ip4 pizza1.webp"
-            alt="Third Slide"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption d-block d-md-block">
-            <h5>
-              Welcome To <br />
-              <span>Your Dream Pizzeria</span>
-            </h5>
-            <p>
-              Taste over 50 freshly baked pizzas, make your decision and enjoy
-            </p>
-          </div>
+      <div class="carousel-item">
+        <img src="Assets/ip4 pizza5.jpg" alt="Second Slide" class="d-block w-100" />
+        <div class="carousel-caption d-block d-md-block">
+          <h5>Best <span>Food</span></h5>
+          <p>With 100+ different types of pizza from all over the globe</p>
         </div>
       </div>
-      <a
-        href="#slideImages"
-        class="carousel-control-prev"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        href="#slideImages"
-        class="carousel-control-next"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </section>
-
-    <!-- About Us -->
-    <section class="p-5 text-light">
-      <div class="container" id="about">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-2 p-5">
-            <h3>Our <span>Story</span></h3>
-          </div>
-          <div class="col-md-5 p-5">
-            <p>
-              We Believe in love, caring & sharing . That’s why, we prepare the
-              best pizzas in town from across the globe. <br />
-              Since the 80’s we have been your trusted eatery. To more love,
-              sharing and caring.
-            </p>
-            <a href="#" class="btn btn-light mt-3">
-              <i class="bi bi-chevron-right"></i> Read More
-            </a>
-          </div>
-          <div class="col-md p-5">
-            <img src="Assets/ip4 pizza3.jpg" class="img-fluid" alt="" />
-          </div>
+      <div class="carousel-item">
+        <img src="Assets/ip4 pizza1.webp" alt="Third Slide" class="d-block w-100" />
+        <div class="carousel-caption d-block d-md-block">
+          <h5>
+            Welcome To <br />
+            <span>Classico Amore Pizzeria</span>
+          </h5>
+          <p>
+            Taste over 50 freshly baked pizzas, make your decision and enjoy
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+    <a href="#slideImages" class="carousel-control-prev" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a href="#slideImages" class="carousel-control-next" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </section>
 
-    <!-- menu -->
-    <section class="p-5 text-light">
-      <div class="container" id="menu">
-        <div class="h3 text-center p-3">The <span>Pizzas</span></div>
-        <div class="row g-4 align-items-center justify-content-between">
-          <div class="col-md-7">
-            <img
-              class="img-fluid"
-              src="Assets/ip4 pizza9.jpg"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="col-md">
-            <img
-              class="img-fluid"
-              src="Assets/ip4 pizza6.jpg"
-              alt=""
-              srcset=""
-            />
-          </div>
+  <!-- About Us -->
+  <section class="p-5 text-light">
+    <div class="container" id="about">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-2 p-5">
+          <h3>Our <span>Story</span></h3>
         </div>
-        <div class="row g-3 align-items-center justify-content-between mt-3">
-          <div class="col-md">
-            <img
-              class="img-fluid"
-              src="Assets/ip4 pizza7.jpg"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="col-md">
-            <img
-              class="img-fluid"
-              src="Assets/ip4 pizza8.jpg"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="col-md">
-            <img
-              class="img-fluid"
-              src="Assets/ip4 pizza10.jpg"
-              alt=""
-              srcset=""
-            />
-          </div>
+        <div class="col-md-5 p-5">
+          <p>
+            We Believe in love, caring & sharing . That’s why, we prepare the
+            best pizzas in town from across the globe. <br />
+            Since the 80’s we have been your trusted eatery. To more love,
+            sharing and caring.
+          </p>
+          <a href="#" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Read More
+          </a>
         </div>
-        <div class="text-center m-3 p-4">
-          <a href="pages/menu.html"
-            ><button class="btn bg-warning text-white">
-              View Full Menu
-            </button></a
-          >
+        <div class="col-md p-5">
+          <img src="Assets/ip4 pizza3.jpg" class="img-fluid" alt="" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- contact us -->
-    <section
-      class="text-white"
-      style="
-        background-image: url('./Assets/ip4 pizza1.webp');
+  <!-- menu -->
+  <section class="p-5 text-light" id="menu" style=" background-image: url('Assets/ip4 pizza8.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;">
+    <div class="container">
+      <div class="h3 text-center p-3">The <span>Pizzas</span></div>
+      <div class="row g-4 align-items-center justify-content-between">
+        <div class="col-md-7">
+          <img class="img-fluid" src="Assets/ip4 pizza9.jpg" alt="" srcset="" />
+        </div>
+        <div class="col-md">
+          <img class="img-fluid" src="Assets/ip4 pizza6.jpg" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="row g-3 align-items-center justify-content-between mt-3">
+        <div class="col-md">
+          <img class="img-fluid" src="Assets/ip4 pizza7.jpg" alt="" srcset="" />
+        </div>
+        <div class="col-md">
+          <img class="img-fluid" src="Assets/ip4 pizza8.jpg" alt="" srcset="" />
+        </div>
+        <div class="col-md">
+          <img class="img-fluid" src="Assets/ip4 pizza10.jpg" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="text-center m-3 p-4">
+        <a href="pages/menu/menu.html"><button class="btn bg-warning text-white">
+            View Full Menu
+          </button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact us -->
+  <section class="text-center" style="
+        /* background-image: url('./Assets/ip4 pizza1.webp'); */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        opacity: 0.6;
-      "
-    >
-      <div class="container text-center" id="contact">
-        <h2 class="p-3 text-warning">CONTACT US</h2>
-        <h4>PLEASE FEEL FREE TO GET IN TOUCH ANYTIME.</h4>
-      </div>
-      <form
-        action="https://formspree.io/f/mlezleoe"
-        method="POST"
-        class="form m-4 text-center"
-        name="contactForm"
-      >
-        <label for="name"></label>
-        <input
-          type="text"
-          class="bg-transparent"
-          name="name"
-          placeholder="Name..."
-          required
-        />
+        /* opacity: 0.6; */
+      ">
+    <div class="container " id="contact">
+      <h2 class="p-3 m-3 text-warning">CONTACT US</h2>
+      <h4 class="text-secondary">PLEASE FEEL FREE TO GET IN TOUCH ANYTIME.</h4>
 
-        <label for="email"></label>
-        <input
-          type="email"
-          class="bg-transparent m-3 text-white"
-          name="email"
-          id="email"
-          placeholder="Email..."
-          required
-        />
-        <br />
+      <form action="https://formspree.io/f/mlezleoe" method="POST" class="form d-flex justify-content-center g-5"
+        name="contactForm">
+        <div class="m-4">
+          <label for="name"></label>
+          <input type="text" class="bg-transparent text-white mb-3" name="name" placeholder="Name &#42" required />
 
-        <label for="message"></label>
-        <div>
-          <textarea
-            rows="8"
-            cols="40"
-            class="bg-transparent text-white container m-4 w-50"
-            id="comment"
-            name="message"
-            placeholder="Write your message here...."
-          ></textarea>
+          <label for="email"></label> <br>
+          <input type="email" class="bg-transparent text-white mb-3" name="email" id="email" placeholder="Email &#42"
+            required />
+          <label for="subject"></label> <br>
+          <input type="subject" class="bg-transparent text-white mb-3" name="subject" id="subject" placeholder="Subject &#42"
+            required />
         </div>
-        <br />
-        <input
-          type="submit"
-          value="Send"
-          id="submitBtn"
-          class="btn btn-warning m-3 text-light"
-        />
+
+        <div>
+          <label for="message"></label>
+          <textarea rows="10" cols="50" class="bg-transparent text-white container" id="comment" name="message"
+            placeholder="Message &#42"></textarea>
+          <br />
+          <input type="submit" value="Send Message" id="submitBtn" class="btn btn-warning m-3 text-light" />
+        </div>
+
       </form>
-    </section>
-    <!-- Social media -->
-    <section class="container text-center pb-3">
-      <h3 class="text-light">We Are Social</h3>
-      <a href="#"><i class="bi bi-twitter text-warning h1 mx-1"></i></a>
-      <a href="#"><i class="bi bi-facebook text-warning h1 mx-1"></i></a>
-      <a href="#"><i class="bi bi-instagram text-warning h1 mx-1"></i></a>
-      <a href="#"><i class="bi bi-linkedin text-warning h1 mx-1"></i></a>
-    </section>
+    </div>
+  </section>
+  <!-- Social media -->
+  <section class="container text-center pb-3 ">
+    <h3 class="text-light mt-4">We Are Social</h3>
+    <a href="#"><i class="bi bi-twitter text-warning h1 mx-1"></i></a>
+    <a href="#"><i class="bi bi-facebook text-warning h1 mx-1"></i></a>
+    <a href="#"><i class="bi bi-instagram text-warning h1 mx-1"></i></a>
+    <a href="#"><i class="bi bi-linkedin text-warning h1 mx-1"></i></a>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer p-2 bg-dark text-center text-white position-relative">
-      <div class="container-fluid d-flex justify-content-between flex-wrap">
-        <p class="lead">Copyright &copy; 2022</p>
-        <p class="lead me-5">Designed & Developed by John Njau</p>
-        <a href="#" class="position-absolute bottom-0 end-0">
-          <i class="bi bi-arrow-up-circle h2 m-2 text-warning"></i>
-        </a>
-      </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer p-2 bg-dark text-center text-white position-relative">
+    <div class="container-fluid d-flex justify-content-between flex-wrap">
+      <p class="lead">Copyright &copy; 2022</p>
+      <p class="lead me-5">Designed & Developed by John Njau</p>
+      <a href="#" class="position-absolute bottom-0 end-0">
+        <i class="bi bi-arrow-up-circle h2 m-2 text-warning"></i>
+      </a>
+    </div>
+  </footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
