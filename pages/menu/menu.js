@@ -1,47 +1,3 @@
-// $().ready(function () {
-//     $("#delivery").click(function () {
-//         $("#delivery-location").show();
-//         $("#totalPayment").show();
-//         $("#pick-up").hide();
-//     });
-//     $("#totalPayment").click(function (event) {
-//         event.preventDefault();
-
-//         var location = $('#location').val();
-//         var phoneNumber = $('#phone-no').val();
-
-//         if (location != "" && phoneNumber != "") {
-//             alert("Your Payment of *** has been received.Your Delivery will be Dispatched to " + location + ". Enjoy!")
-//         } else {
-//             alert("Please Enter Your Delivery Details")
-//         }
-//     });
-
-// });
-
-// $().ready(function () {
-//     $("#pick-up").click(function () {
-//         $("#delivery").hide();
-//         $("#totalPayment").hide();
-//         $("#totalAmount").show();
-
-//     });
-//         $("#totalAmount").click(function () {
-//             // var amount = $('#location').val();
-
-//             alert("Your Payment of *** has been received. Your order will be available for pick up in 20mins")
-
-//         });
-// });    
-
-
-// Adding items to checkout
-// const addingItem = document.querySelectorAll("#addItemBtn");
-
-// addingItem.forEach((btn) => {
-//     btn.addEventListener("click", sumCost)
-// });
-
 // selected order constructor
 function Order(name, size, crust, toppings) {
     this.pizzaName = name;
@@ -72,66 +28,52 @@ $().ready(function () {
                 sizeCost = 1000;
             } else if (size === 'large') {
                 sizeCost = 1500;
-            }
-            else {
+            } else {
                 alert("Select Size of Pizza.")
             }
-        }
-        else if (pizzaName === 'soySeechi') {
+        } else if (pizzaName === 'soySeechi') {
             if (size === 'small') {
                 sizeCost = 850;
             } else if (size === 'medium') {
                 sizeCost = 1050;
             } else if (size === 'large') {
                 sizeCost = 1550;
-            }
-            else {
+            } else {
                 alert("Select Size of Pizza.")
             }
-        }
-        else if (pizzaName === "sigaraGo") {
+        } else if (pizzaName === "sigaraGo") {
             if (size === 'small') {
                 sizeCost = 1000;
             } else if (size === 'medium') {
                 sizeCost = 1100;
             } else if (size === 'large') {
                 sizeCost = 1600;
-            }
-            else {
+            } else {
                 alert("Select Size of Pizza.")
             }
-        }
-        else if (pizzaName === "tolCruzo") {
+        } else if (pizzaName === "tolCruzo") {
             if (size === 'small') {
                 sizeCost = 1050;
             } else if (size === 'medium') {
                 sizeCost = 1150;
             } else if (size === 'large') {
                 sizeCost = 1650;
-            }
-            else {
+            } else {
                 alert("Select Size of Pizza.")
             }
-        }
-        else if (pizzaName === "tocoLeno") {
+        } else if (pizzaName === "tocoLeno") {
             if (size === 'small') {
                 sizeCost = 1200;
             } else if (size === 'medium') {
                 sizeCost = 1400;
             } else if (size === 'large') {
                 sizeCost = 1900;
-            }
-            else {
+            } else {
                 alert("Select Size of Pizza.")
             }
-        }
-        else if (pizzaName === "pizzaName") {
+        } else if (pizzaName === "pizzaName") {
             alert("Select Flavor of pizza")
-        }
-
-        else {
-            // var price = (sizeCost + costOfCrust + toppingsCost);
-            // var total = price * number;
+        } else {
             alert("sizeCost");
         }
 
@@ -141,11 +83,9 @@ $().ready(function () {
             costOfCrust = 200;
         } else if (crust === "thick") {
             costOfCrust = 300;
-        }
-        else if (crust === "stuffed") {
+        } else if (crust === "stuffed") {
             costOfCrust = 400;
-        }
-        else {
+        } else {
             alert("Select crust size");
         }
 
@@ -153,27 +93,15 @@ $().ready(function () {
         var toppingsCost;
         if (toppings === "pepperoni") {
             toppingsCost = 300;
-        }
-        else if (toppings === "chicken") {
+        } else if (toppings === "chicken") {
             toppingsCost = 250;
-        }
-        else if (toppings === "cheese") {
+        } else if (toppings === "cheese") {
             toppingsCost = 100;
-        }
-        else {
+        } else {
             alert("Select toppings");
         }
 
-
         var total = (sizeCost + costOfCrust + toppingsCost) * number;
-
-        // array for total price for each order;
-
-
-
-
-
-
 
         $("#yourCart").show();
 
@@ -184,7 +112,6 @@ $().ready(function () {
         $(".number").append('<tr><td id="number">' + number);
         $(".totalAmountPayable").append('<tr><td id="totalAmountPayable">' + total);
         arrayTotalPrice.push(total); //create an array for all total prices
-        // $(".addedItems").append("<p>" + `Your total bill is ${total}`)
         // $(".grandTotal").append('<tr><td id="totalAmountPayable">' + checkoutTotal);
 
     });
@@ -221,54 +148,61 @@ $().ready(function () {
         });
         console.log(checkoutTotal);
 
-        $(".totalPick").text(checkoutTotal);
-        var checkoutTotalDel = checkoutTotal + 200; //add Ksh.200 to checkout total when delivery is chosen
+        //add Ksh.200 to checkout total when delivery is chosen
+        var checkoutTotalDel = checkoutTotal + 200; 
         $(".totalDel").text(checkoutTotalDel + "/=");
-        // var checkoutTotalDel = che
-    
 
-    // $(".addedItems").append("<p>" + `Your total bill is ${total}`)
+        $("#totalPayment").click(function (event) {
+            event.preventDefault();
 
-    $("#totalPayment").click(function (event) {
-        event.preventDefault();
+            $(".itemsDelivered").hide();
+            $("#totalPayment").hide();
+            $("#delivery-location").hide();
+            $(".totalDel").hide();
 
-        $(".itemsDelivered").hide();
-        $("#totalPayment").hide();
-        $("#delivery-location").hide();
-        $(".totalDel").hide();
+            var location = $('#location').val();
+            var phoneNumber = $('#phone-no').val();
 
-        var location = $('#location').val();
-        var phoneNumber = $('#phone-no').val();
+            if (location != "" && phoneNumber != "") {
 
-        if (location != "" && phoneNumber != "") {
-
-            $(".finally").append( '<i class="fas fa-check-circle m-5" style="font-size:80px;color:green;"></i>' + '<br>' +
-           '<p>' + `Your Payment of ${checkoutTotalDel}/= has been received.Your Delivery will be Dispatched to ${location}.Keep it Classico Amore. Enjoy!` + '<p/>'); 
-        } else {
-            alert("Please Enter Your Delivery Details")
-        }
+                $(".finally").append('<i class="fas fa-check-circle m-5" style="font-size:80px;color:green;"></i>' + '<br>' +
+                    '<p>' + `Your Payment of ${checkoutTotalDel}/= has been received.Your Delivery will be Dispatched to ${location}.Keep it Classico Amore. Enjoy!` + '<p/>');
+            } else {
+                alert("Please Enter Your Delivery Details")
+            }
+        });
     });
-
     // Pick up total Payment
     $("#pickUp").click(function () {
         $("#delivery").hide();
         $("#totalPayment").hide();
+        $(".checkoutModeClicked").hide();
         $("#totalAmountPickUp").show();
+        $("#pickUp").hide();
+        $(".itemsPicked").show();
 
-    });
-    $("#totalAmountPickUp").click(function () {
-        // var amount = $('#location').val();
+        var checkoutTotal = 0;
+        arrayTotalPrice.forEach(function (index) {
+            checkoutTotal = checkoutTotal + index;
+        });
+        console.log(checkoutTotal);
 
-        alert(`Your Payment of ${checkoutTotalDel} has been received.Your Order will be ready for Pick up in 20mins..Keep it Classico Amore. Enjoy!`)
+        $(".totalPick").text(checkoutTotal + "/=");
+
+        $("#totalAmountPickUp").click(function () {
+            $(".totalPick").hide();
+            $(".itemsPicked").hide();
+            $("#totalAmountPickUp").hide();
+            // var amount = $('#location').val();
+
+            $(".finallyPicked").append('<i class="fas fa-check-circle m-5" style="font-size:80px;color:green;"></i>' + '<br>' +
+                '<p>' + `Your Payment of ${checkoutTotal}/= has been received.Your Order will be ready for Pick up in 20mins.Keep it Classico Amore. Enjoy!` + '<p/>');
+            // alert(`Your Payment of ${checkoutTotal} has been received.Your Order will be ready for Pick up in 20mins..Keep it Classico Amore. Enjoy!`)
+        });
 
     });
 
 });
-});
-
-// $().ready(function () {
-
-// });
 
 // menu.js continuation
 $().ready(function () {
@@ -281,4 +215,3 @@ $().ready(function () {
         $("#totalAmountPickUp").hide();
     });
 });
-

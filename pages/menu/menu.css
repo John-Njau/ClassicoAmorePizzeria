@@ -10,15 +10,6 @@ span {
     color: #d7bc24 !important;
 }
 
-/* #yourCart {
-    display: none;
-} */
-
-
-/* .allOrders {
-    display: none;
-} */
-
 /* Import from checkout.css */
 .navbar-brand {
     color: #d7bc24 !important;
@@ -33,6 +24,7 @@ span {
 #totalAmount,
 .allOrders,
 #yourCart,
-.itemsDelivered {
+.itemsDelivered,
+.itemsPicked  {
     display: none;
 }

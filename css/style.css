@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  cursor: pointer;
 }
 
 body {
@@ -10,14 +11,34 @@ body {
   color: #d7bc24 !important;
 }
 
+.navbar {
+  box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.2) !important;
+  z-index: 1000 !important;
+}
+
+
+
 .logoImg {
   height: 50%;
   background-color: #343330;
   border-radius: 50%;
   /* margin-top: 10%; */
   /* left: 50%; */
+  animation: float 3s linear infinite;
   transition: transform 2s, background-color 3s;
   opacity: 0.7;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(-3rem);
+  }
+
+  50% {
+    transform: translateY(1rem);
+  }
 }
 
 .logoImg:hover {
@@ -36,6 +57,49 @@ body {
 
 span {
   color: #d7bc24;
+}
+
+.box {
+  /* flex:1 1 30rem; */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  /* border:.1rem solid rgba(0,0,0,.3); */
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.box .content {
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+  position: absolute;
+  top: -100%;
+  left: 0;
+  /* padding: auto; */
+  /* margin: auto; */
+}
+
+.box .content {
+  text-align: center;
+  background: #fff;
+  opacity: 0.8;
+  /* padding:2rem; */
+}
+
+.box .content p,
+h3 {
+  font-size: 1.6rem;
+  color: #343330;
+  padding: 1rem 0;
+}
+
+.box:hover .content {
+  top: 0;
+}
+
+.box:hover img {
+  transform: translateY(100%);
 }
 
 ::placeholder {
@@ -63,11 +127,6 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-
-  /* .carousel-item {
-      height: 80vh;
-      size: 100%;
-    } */
   .logoImg {
     display: none;
   }
@@ -76,5 +135,4 @@ textarea {
     display: flex;
     flex-wrap: wrap;
   }
-
 }

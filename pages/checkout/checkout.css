@@ -1,7 +1,11 @@
-.navbar-brand{
+/* .navbar-brand{
     color: #d7bc24!important;
 }
 
 .nav-link:hover{
     color: #d7bc24!important;
 }
+
+#delivery-location, #totalPayment, #totalAmount{
+    display: none;
+} */
