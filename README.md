@@ -23,7 +23,7 @@ This a Pizza restaurant website.
  <p>This is a website displays what ClassicoAmore Pizzeria Offers. It attracts the user attention using a well layered display page and catchy images. Users can also order their favourite pizzas using the website. </p>
 
 
-![snippet1.png](./Assets/Display2.png)
+[![Display.png](https://i.postimg.cc/Kjy8Qfqk/Display.png)](https://postimg.cc/MMdwp78q)
 
 # Behaviour Driven Development
 
