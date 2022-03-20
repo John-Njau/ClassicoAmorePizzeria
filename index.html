@@ -11,6 +11,9 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Lobster&family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="Assets/logoImage-removebg.png" type="image/x-icon" />
   <title>Pizzeria</title>
@@ -64,10 +67,10 @@
           <!-- the logo image should not be visible in small sized screens -->
           <img class="img-fluid logoImg m-3" src="Assets/logoImage-removebg.png" alt="Logo image" />
           <br />
-          <h class="fs-1 mb-3 d-block d-md-none">
-            <span class="lead fs-1">Classico Amore Pizzeria</span>
+          <h class=" mb-3 d-block d-md-none">
+            <span class="lead" id="cap">Classico Amore Pizzeria</span>
           </h>
-          <span class="fs-2 text-white">Slice &bull; Dine &bull; Wine</span>
+          <span class="fs-2 text-white" id="sliceDineWine">Slice &bull; Dine &bull; Wine</span>
         </div>
       </div>
       <div class="carousel-item">
@@ -105,7 +108,7 @@
     <div class="container" id="about">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-2 p-5">
-          <h3>Our <span>Story</span></h3>
+          <h3 class="text-white">Our <span>Story</span></h3>
         </div>
         <div class="col-md-5 p-5">
           <p>
@@ -134,7 +137,7 @@
     background-size: cover;
     position: relative;">
     <div class="container">
-      <div class="h3 text-center p-3">Signature <span>Pizzas</span></div>
+      <div class="h3 text-center p-3 fs-1">Signature <span>Pizzas</span></div>
       <div class="row g-4 align-items-center justify-content-between">
         <div class="col-md-5 box p-3">
           <img class="img-fluid" src="Assets/hawaiian1-removebg.png" alt="" srcset="" />
