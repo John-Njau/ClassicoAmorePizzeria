@@ -7,8 +7,8 @@ body {
   background-color: #343330;
   font-family: 'Lato', sans-serif;
 
-font-family: 'Poppins', sans-serif;
-font-size: 1.2rem!important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem !important;
 }
 
 .navbar-brand {
@@ -57,24 +57,24 @@ font-size: 1.2rem!important;
   height: 70%;
 }
 
-#cap{
-  font-family: 'Lobster', cursive!important;
+#cap {
+  font-family: 'Lobster', cursive !important;
   /* font-size: 2.6rem!important; */
 }
 
-h5{
-  font-size: 2.0rem!important;
+h5 {
+  font-size: 2.0rem !important;
 }
 
 span {
   color: #d7bc24;
-  font-family: 'Lobster', cursive!important;
+  font-family: 'Lobster', cursive !important;
   font-size: 2.0rem;
 }
 
-#sliceDineWine{
+#sliceDineWine {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.6rem!important;
+  font-size: 2.6rem !important;
 }
 
 .box {
@@ -94,8 +94,6 @@ span {
   position: absolute;
   top: -100%;
   left: 0;
-  /* padding: auto; */
-  /* margin: auto; */
 }
 
 .box .content {
