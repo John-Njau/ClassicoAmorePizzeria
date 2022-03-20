@@ -178,6 +178,7 @@ $().ready(function () {
             if (location != "" && phoneNumber != "") {
                 $(".finally").append('<i class="fas fa-check-circle m-5" style="font-size:80px;color:green;"></i>' + '<br>' +
                     '<p>' + `Your Payment of ${checkoutTotalDel}/= has been received.Your Delivery will be Dispatched to ${location}.Keep it Classico Amore. Enjoy!` + '<p/>');
+                    $("#delivery-location").trigger("reset");
             } else if ((location === "" )|| (phoneNumber === "")) {
                 alert("Please Enter Your Delivery Details")
                 location.focus();
