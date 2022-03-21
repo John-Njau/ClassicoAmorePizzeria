@@ -208,14 +208,9 @@ $().ready(function () {
             $("#totalAmountPickUp").hide();
             // var amount = $('#location').val();
 
-            // if (location != "" && phoneNumber != ""){
-            // $(".finallyPicked").append('<i class="fas fa-check-circle m-5" style="font-size:80px;color:green;"></i>' + '<br>' +
-            //     '<p>' + `Your Payment of ${checkoutTotal}/= has been received.Your Order will be ready for Pick up in 20mins.Keep it Classico Amore. Enjoy!` + '<p/>');
-            // // alert(`Your Payment of ${checkoutTotal} has been received.Your Order will be ready for Pick up in 20mins..Keep it Classico Amore. Enjoy!`)
-            // }
-            // else{
-            //    alert( "Please Enter your Details");
-            // }
+            $(".finallyPicked").append('<i class="fas fa-check-circle m-5" style="font-size:80px;color:green;"></i>' + '<br>' +
+                '<p>' + `Your Payment of ${checkoutTotal}/= has been received.Your Order will be ready for Pick up in 20mins.Keep it Classico Amore. Enjoy!` + '<p/>');
+            // alert(`Your Payment of ${checkoutTotal} has been received.Your Order will be ready for Pick up in 20mins..Keep it Classico Amore. Enjoy!`)
         });
 
     });
